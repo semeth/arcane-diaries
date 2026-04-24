@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.40,
+  "group": "actinium",
+  "ingredient": {
+    "item": "arcanediaries:actinium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "arcanediaries:actinium_ingot"
+  }
+}

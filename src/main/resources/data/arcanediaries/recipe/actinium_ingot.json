@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arcanediaries:actinium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "arcanediaries:actinium_ingot"
+  }
+}

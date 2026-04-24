@@ -1,9 +1,12 @@
 {
   "item.arcanediaries.actinium": "Actinium",
   "item.arcanediaries.actinium_ingot": "Actinium Ingot",
+  "item.arcanediaries.chisel": "Chisel",
 
   "block.arcanediaries.actinium_ore": "Actinium Ore",
   "block.arcanediaries.actinium_block": "Actinium Block",
+
+  "block.arcanediaries.magic_block": "Magic Block",
 
   "creativetab.arcanediaries.arcane_diaries": "Arcane Diaries"
 }

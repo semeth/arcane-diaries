@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ACTINIUM_INGOT);
                         output.accept(ModBlocks.ACTINIUM_ORE);
                         output.accept(ModBlocks.ACTINIUM_BLOCK);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus){

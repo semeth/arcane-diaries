@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 160,
+  "experience": 0.40,
+  "group": "actinium",
+  "ingredient": {
+    "item": "arcanediaries:actinium"
+  },
+  "result": {
+    "count": 1,
+    "id": "arcanediaries:actinium_ingot"
+  }
+}
