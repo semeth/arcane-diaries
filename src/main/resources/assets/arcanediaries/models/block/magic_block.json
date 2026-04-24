@@ -1,7 +1,6 @@
 {
-  "variants": {
-    "": {
-      "model": "arcanediaries:block/magic_block"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "arcanediaries:block/magic_block"
   }
 }

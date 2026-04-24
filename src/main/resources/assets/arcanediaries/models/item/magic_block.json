@@ -1,7 +1,3 @@
 {
-  "variants": {
-    "": {
-      "model": "arcanediaries:block/magic_block"
-    }
-  }
+  "parent": "arcanediaries:block/magic_block"
 }
