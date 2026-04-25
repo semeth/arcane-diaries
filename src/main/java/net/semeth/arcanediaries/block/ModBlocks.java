@@ -6,6 +6,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.semeth.arcanediaries.ArcaneDiaries;
+import net.semeth.arcanediaries.block.custom.ActiniumLampBlock;
 import net.semeth.arcanediaries.block.custom.MagicBlock;
 import net.semeth.arcanediaries.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -54,6 +55,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
     public static final DeferredBlock<TrapDoorBlock> ACTINIUM_TRAPDOOR = registerBlock("actinium_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final DeferredBlock<Block> ACTINIUM_LAMP = registerBlock("actinium_lamp",
+            () -> new ActiniumLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(ActiniumLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -17,7 +17,9 @@
   "block.arcanediaries.actinium_fence_gate": "Actinium Fence Gate",
   "block.arcanediaries.actinium_wall": "Actinium Wall",
   "block.arcanediaries.actinium_door": "Actinium Door",
-  "block.arcanediaries.actinium_trapdoor": "Actinium Trap Door",
+  "block.arcanediaries.actinium_trapdoor": "Actinium Trapdoor",
+
+  "block.arcanediaries.actinium_lamp": "Actinium Lamp",
 
   "block.arcanediaries.magic_block": "Magic Block",
 

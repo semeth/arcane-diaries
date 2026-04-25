@@ -46,6 +46,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.ACTINIUM_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ACTINIUM_DOOR.get()));
+
+        dropSelf(ModBlocks.ACTINIUM_LAMP.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

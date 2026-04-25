@@ -44,6 +44,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.ACTINIUM_DOOR);
                         output.accept(ModBlocks.ACTINIUM_TRAPDOOR);
+
+                        output.accept(ModBlocks.ACTINIUM_LAMP);
                     }).build());
 
     public static void register(IEventBus eventBus){
