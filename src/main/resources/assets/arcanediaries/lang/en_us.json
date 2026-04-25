@@ -9,6 +9,16 @@
   "block.arcanediaries.actinium_ore": "Actinium Ore",
   "block.arcanediaries.actinium_block": "Actinium Block",
 
+  "block.arcanediaries.actinium_stairs": "Actinium Stairs",
+  "block.arcanediaries.actinium_slab": "Actinium Slab",
+  "block.arcanediaries.actinium_pressure_plate": "Actinium Pressure Plate",
+  "block.arcanediaries.actinium_button": "Actinium Button",
+  "block.arcanediaries.actinium_fence": "Actinium Fence",
+  "block.arcanediaries.actinium_fence_gate": "Actinium Fence Gate",
+  "block.arcanediaries.actinium_wall": "Actinium Wall",
+  "block.arcanediaries.actinium_door": "Actinium Door",
+  "block.arcanediaries.actinium_trapdoor": "Actinium Trap Door",
+
   "block.arcanediaries.magic_block": "Magic Block",
 
   "creativetab.arcanediaries.arcane_diaries": "Arcane Diaries",

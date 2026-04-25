@@ -26,10 +26,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ACTINIUM_ORE);
                         output.accept(ModBlocks.ACTINIUM_BLOCK);
                         output.accept(ModBlocks.MAGIC_BLOCK);
+
                         output.accept(ModItems.RADISH);
                         output.accept(ModItems.FROSTFIRE_ICE);
                         output.accept(ModItems.STARLIGHT_ASHES);
                         output.accept(ModItems.CHISEL);
+
+                        output.accept(ModBlocks.ACTINIUM_STAIRS);
+                        output.accept(ModBlocks.ACTINIUM_SLAB);
+
+                        output.accept(ModBlocks.ACTINIUM_PRESSURE_PLATE);
+                        output.accept(ModBlocks.ACTINIUM_BUTTON);
+
+                        output.accept(ModBlocks.ACTINIUM_FENCE);
+                        output.accept(ModBlocks.ACTINIUM_FENCE_GATE);
+                        output.accept(ModBlocks.ACTINIUM_WALL);
+
+                        output.accept(ModBlocks.ACTINIUM_DOOR);
+                        output.accept(ModBlocks.ACTINIUM_TRAPDOOR);
                     }).build());
 
     public static void register(IEventBus eventBus){

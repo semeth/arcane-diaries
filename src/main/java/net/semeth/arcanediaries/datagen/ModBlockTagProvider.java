@@ -21,10 +21,23 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ACTINIUM_BLOCK.get())
                 .add(ModBlocks.ACTINIUM_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.ACTINIUM_SLAB.get())
+                .add(ModBlocks.ACTINIUM_STAIRS.get())
+                .add(ModBlocks.ACTINIUM_PRESSURE_PLATE.get())
+                .add(ModBlocks.ACTINIUM_BUTTON.get())
+                .add(ModBlocks.ACTINIUM_FENCE.get())
+                .add(ModBlocks.ACTINIUM_FENCE_GATE.get())
+                .add(ModBlocks.ACTINIUM_WALL.get())
+                .add(ModBlocks.ACTINIUM_DOOR.get())
+                .add(ModBlocks.ACTINIUM_TRAPDOOR.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ACTINIUM_ORE.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.ACTINIUM_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.ACTINIUM_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.ACTINIUM_WALL.get());
 
     }
 }

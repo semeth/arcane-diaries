@@ -3,6 +3,10 @@ package net.semeth.arcanediaries.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.crafting.BlastingRecipe;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.semeth.arcanediaries.block.ModBlocks;
@@ -35,5 +39,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(recipeOutput, ACTINIUM_SMELTABLE, RecipeCategory.MISC, ModItems.ACTINIUM_INGOT.get(), 0.25f, 200, "actinium_ingot");
         oreBlasting(recipeOutput, ACTINIUM_SMELTABLE, RecipeCategory.MISC, ModItems.ACTINIUM_INGOT.get(), 0.25f, 100, "actinium_ingot");
 
+        stairBuilder(ModBlocks.ACTINIUM_STAIRS.get(), Ingredient.of(ModItems.ACTINIUM_INGOT)).group("actinium_ingot")
+                .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT)).save(recipeOutput);
+
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACTINIUM_SLAB.get(), ModItems.ACTINIUM_INGOT.get());
+
+        buttonBuilder(ModBlocks.ACTINIUM_BUTTON.get(), Ingredient.of(ModItems.ACTINIUM_INGOT.get())).group("actinium_ingot")
+                .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT.get())).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.ACTINIUM_PRESSURE_PLATE.get(), ModItems.ACTINIUM_INGOT.get());
+        fenceBuilder(ModBlocks.ACTINIUM_FENCE.get(), Ingredient.of(ModItems.ACTINIUM_INGOT.get())).group("actinium_ingot")
+                .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT.get())).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.ACTINIUM_FENCE_GATE.get(), Ingredient.of(ModItems.ACTINIUM_INGOT.get())).group("actinium_ingot")
+                .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT.get())).save(recipeOutput);
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACTINIUM_WALL.get(), ModItems.ACTINIUM_INGOT.get());
+        doorBuilder(ModBlocks.ACTINIUM_DOOR.get(), Ingredient.of(ModItems.ACTINIUM_INGOT.get())).group("actinium_ingot")
+                .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.ACTINIUM_TRAPDOOR.get(), Ingredient.of(ModItems.ACTINIUM_INGOT.get())).group("actinium_ingot")
+                .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT.get())).save(recipeOutput);
+
+    }
+
+    protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup){
+        oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smelting");
+    }
+
+    protected static void oreBlasting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup){
+        oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
     }
 }

@@ -31,9 +31,24 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.ACTINIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.ACTINIUM_ORE.get(), ModItems.ACTINIUM.get(), 1, 2));
+
+        dropSelf(ModBlocks.ACTINIUM_STAIRS.get());
+        add(ModBlocks.ACTINIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ACTINIUM_SLAB.get()));
+
+        dropSelf(ModBlocks.ACTINIUM_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.ACTINIUM_BUTTON.get());
+
+        dropSelf(ModBlocks.ACTINIUM_FENCE.get());
+        dropSelf(ModBlocks.ACTINIUM_FENCE_GATE.get());
+        dropSelf(ModBlocks.ACTINIUM_WALL.get());
+        dropSelf(ModBlocks.ACTINIUM_TRAPDOOR.get());
+
+        add(ModBlocks.ACTINIUM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.ACTINIUM_DOOR.get()));
     }
 
-    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops){
+    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
