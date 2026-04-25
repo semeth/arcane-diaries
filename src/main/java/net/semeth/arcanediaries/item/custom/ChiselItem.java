@@ -16,6 +16,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.semeth.arcanediaries.block.ModBlocks;
+import net.semeth.arcanediaries.component.ModDataComponents;
 import net.semeth.arcanediaries.item.ModItems;
 
 import java.util.List;
@@ -50,6 +51,8 @@ public class ChiselItem extends Item {
                     item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -63,6 +66,11 @@ public class ChiselItem extends Item {
         }else{
             tooltipComponents.add(Component.translatable("tooltip.arcanediaries.chisel"));
         }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null){
+            tooltipComponents.add(Component.literal("Last Block changed at " + stack.get(ModDataComponents.COORDINATES)));
+        }
+
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

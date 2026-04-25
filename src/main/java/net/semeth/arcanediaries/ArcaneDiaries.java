@@ -2,6 +2,7 @@ package net.semeth.arcanediaries;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.semeth.arcanediaries.block.ModBlocks;
+import net.semeth.arcanediaries.component.ModDataComponents;
 import net.semeth.arcanediaries.item.ModCreativeModeTabs;
 import net.semeth.arcanediaries.item.ModItems;
 import org.slf4j.Logger;
@@ -39,6 +40,8 @@ public class ArcaneDiaries {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
