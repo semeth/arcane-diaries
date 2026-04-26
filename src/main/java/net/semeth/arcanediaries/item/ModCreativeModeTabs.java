@@ -21,6 +21,15 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.ACTINIUM.get()))
                     .title(Component.translatable("creativetab.arcanediaries.arcane_diaries"))
                     .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.ACTINIUM_SWORD);
+                        output.accept(ModItems.ACTINIUM_AXE);
+                        output.accept(ModItems.ACTINIUM_SHOVEL);
+                        output.accept(ModItems.ACTINIUM_HOE);
+                        output.accept(ModItems.ACTINIUM_PICKAXE);
+
+                        output.accept(ModItems.ACTINIUM_HAMMER);
+
                         output.accept(ModItems.ACTINIUM);
                         output.accept(ModItems.ACTINIUM_INGOT);
                         output.accept(ModBlocks.ACTINIUM_ORE);

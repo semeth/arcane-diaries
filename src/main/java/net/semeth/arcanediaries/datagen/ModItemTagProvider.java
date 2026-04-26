@@ -3,6 +3,7 @@ package net.semeth.arcanediaries.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.semeth.arcanediaries.ArcaneDiaries;
@@ -24,5 +25,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.ACTINIUM.get())
                 .add(ModItems.ACTINIUM_INGOT.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.ACTINIUM_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.ACTINIUM_PICKAXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.ACTINIUM_AXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.ACTINIUM_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.ACTINIUM_HOE.get());
     }
 }
