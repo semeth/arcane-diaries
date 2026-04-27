@@ -57,6 +57,19 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.ACTINIUM, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.ACTINIUM, 7F, -3.5f))));
 
+    public static final DeferredItem<ArmorItem> ACTINIUM_HELMET = ITEMS.register("actinium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ACTINIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ACTINIUM_CHESTPLATE = ITEMS.register("actinium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ACTINIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ACTINIUM_LEGGINGS = ITEMS.register("actinium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ACTINIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ACTINIUM_BOOTS = ITEMS.register("actinium_boots",
+            () -> new ArmorItem(ModArmorMaterials.ACTINIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
 
 
     public static void register(IEventBus eventBus){

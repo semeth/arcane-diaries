@@ -30,6 +30,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ACTINIUM_HAMMER);
 
+                        output.accept(ModItems.ACTINIUM_HELMET);
+                        output.accept(ModItems.ACTINIUM_CHESTPLATE);
+                        output.accept(ModItems.ACTINIUM_LEGGINGS);
+                        output.accept(ModItems.ACTINIUM_BOOTS);
+
                         output.accept(ModItems.ACTINIUM);
                         output.accept(ModItems.ACTINIUM_INGOT);
                         output.accept(ModBlocks.ACTINIUM_ORE);

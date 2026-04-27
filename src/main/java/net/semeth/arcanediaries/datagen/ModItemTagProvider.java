@@ -36,5 +36,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ACTINIUM_SHOVEL.get());
         tag(ItemTags.HOES)
                 .add(ModItems.ACTINIUM_HOE.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ACTINIUM_HELMET.get())
+                .add(ModItems.ACTINIUM_CHESTPLATE.get())
+                .add(ModItems.ACTINIUM_LEGGINGS.get())
+                .add(ModItems.ACTINIUM_BOOTS.get());
     }
 }
