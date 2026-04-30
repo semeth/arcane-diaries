@@ -19,6 +19,7 @@
   "item.arcanediaries.actinium_boots": "Actinium Boots",
 
   "item.arcanediaries.actinium_horse_armor": "Actinium Horse Armor",
+  "item.arcanediaries.semeth_armor_trim_smithing_template": "Semeth Trim Template",
 
   "block.arcanediaries.actinium_ore": "Actinium Ore",
   "block.arcanediaries.actinium_block": "Actinium Block",
@@ -43,5 +44,9 @@
 
   "tooltip.arcanediaries.chisel.shift.down": "§o§5This item can chisel some blocks into different variants§r§r",
   "tooltip.arcanediaries.chisel": "Press §eShift§r for more information",
-  "tooltip.arcanediaries.radish.tooltip": "Tastes really great!"
+
+  "tooltip.arcanediaries.radish.tooltip": "Tastes really great!",
+
+  "trim_pattern.arcanediaries.semeth": "Semeth Armor Trim",
+  "trim_material.arcanediaries.actinium": "Actinium Material"
 }

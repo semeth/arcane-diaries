@@ -68,6 +68,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ACTINIUM_BOOTS);
 
         basicItem(ModItems.ACTINIUM_HORSE_ARMOR.get());
+        basicItem(ModItems.SEMETH_SMITHING_TEMPLATE.get());
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

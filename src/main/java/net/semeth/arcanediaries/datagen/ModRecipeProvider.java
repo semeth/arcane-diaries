@@ -3,12 +3,14 @@ package net.semeth.arcanediaries.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.BlastingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import net.semeth.arcanediaries.ArcaneDiaries;
 import net.semeth.arcanediaries.block.ModBlocks;
 import net.semeth.arcanediaries.item.ModItems;
 
@@ -57,6 +59,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT.get())).save(recipeOutput);
         trapdoorBuilder(ModBlocks.ACTINIUM_TRAPDOOR.get(), Ingredient.of(ModItems.ACTINIUM_INGOT.get())).group("actinium_ingot")
                 .unlockedBy("has_actinium_ingot", has(ModItems.ACTINIUM_INGOT.get())).save(recipeOutput);
+
+        trimSmithing(recipeOutput, ModItems.SEMETH_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(ArcaneDiaries.MOD_ID, "semeth"));
 
     }
 

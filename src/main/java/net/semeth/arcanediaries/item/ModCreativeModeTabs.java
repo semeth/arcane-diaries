@@ -35,7 +35,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ACTINIUM_LEGGINGS);
                         output.accept(ModItems.ACTINIUM_BOOTS);
 
-                        output.accept(ModItems.ACTINIUM_HORSE_ARMOR);
+                        output.accept(ModItems.ACTINIUM_HORSE_ARMOR.get());
+                        output.accept(ModItems.SEMETH_SMITHING_TEMPLATE);
 
                         output.accept(ModItems.ACTINIUM);
                         output.accept(ModItems.ACTINIUM_INGOT);

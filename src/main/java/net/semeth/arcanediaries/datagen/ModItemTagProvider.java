@@ -42,5 +42,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ACTINIUM_CHESTPLATE.get())
                 .add(ModItems.ACTINIUM_LEGGINGS.get())
                 .add(ModItems.ACTINIUM_BOOTS.get());
+
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.ACTINIUM.get());
+
+        this.tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.SEMETH_SMITHING_TEMPLATE.get());
     }
 }
