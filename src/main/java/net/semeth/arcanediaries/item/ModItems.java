@@ -9,6 +9,7 @@ import net.semeth.arcanediaries.ArcaneDiaries;
 import net.semeth.arcanediaries.item.custom.ChiselItem;
 import net.semeth.arcanediaries.item.custom.FuelItem;
 import net.semeth.arcanediaries.item.custom.HammerItem;
+import net.semeth.arcanediaries.item.custom.ModArmorItem;
 
 import java.util.List;
 
@@ -58,7 +59,7 @@ public class ModItems {
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.ACTINIUM, 7F, -3.5f))));
 
     public static final DeferredItem<ArmorItem> ACTINIUM_HELMET = ITEMS.register("actinium_helmet",
-            () -> new ArmorItem(ModArmorMaterials.ACTINIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.ACTINIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
     public static final DeferredItem<ArmorItem> ACTINIUM_CHESTPLATE = ITEMS.register("actinium_chestplate",
             () -> new ArmorItem(ModArmorMaterials.ACTINIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
