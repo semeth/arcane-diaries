@@ -44,7 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.ACTINIUM.get());
         basicItem(ModItems.ACTINIUM_INGOT.get());
-        basicItem(ModItems.CHISEL.get());
+//        basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.RADISH.get());
         basicItem(ModItems.FROSTFIRE_ICE.get());
         basicItem(ModItems.STARLIGHT_ASHES.get());

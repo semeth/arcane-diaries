@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arcanediaries:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arcanediaries:used": 1
+      },
+      "model": "arcanediaries:item/chisel_used"
+    }
+  ]
+}

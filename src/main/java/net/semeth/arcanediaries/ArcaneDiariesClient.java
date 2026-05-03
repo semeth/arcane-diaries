@@ -8,6 +8,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.semeth.arcanediaries.util.ModItemProperties;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = ArcaneDiaries.MOD_ID, dist = Dist.CLIENT)
@@ -23,6 +24,6 @@ public class ArcaneDiariesClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-
+        ModItemProperties.addCustomItemProperties();
     }
 }
