@@ -63,6 +63,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ACTINIUM_TRAPDOOR);
 
                         output.accept(ModBlocks.ACTINIUM_LAMP);
+
+                        output.accept(ModItems.SEMETH_BOW);
                     }).build());
 
     public static void register(IEventBus eventBus){

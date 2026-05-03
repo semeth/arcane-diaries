@@ -1,0 +1,6 @@
+{
+  "parent": "arcanediaries:item/semeth_bow",
+  "textures": {
+    "layer0": "arcanediaries:item/semeth_bow_pulling_0"
+  }
+}

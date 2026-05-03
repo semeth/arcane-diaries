@@ -79,6 +79,9 @@ public class ModItems {
     public static final DeferredItem<Item> SEMETH_SMITHING_TEMPLATE = ITEMS.register("semeth_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(ArcaneDiaries.MOD_ID, "semeth")));
 
+    public static final DeferredItem<Item> SEMETH_BOW = ITEMS.register("semeth_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
 
 
     public static void register(IEventBus eventBus){
