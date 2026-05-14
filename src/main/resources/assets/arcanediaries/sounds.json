@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.arcanediaries.chisel_use",
+    "sounds": [
+      "arcanediaries:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.arcanediaries.magic_block_break",
+    "sounds": [
+      "arcanediaries:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.arcanediaries.magic_block_step",
+    "sounds": [
+      "arcanediaries:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.arcanediaries.magic_block_place",
+    "sounds": [
+      "arcanediaries:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.arcanediaries.magic_block_hit",
+    "sounds": [
+      "arcanediaries:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.arcanediaries.magic_block_fall",
+    "sounds": [
+      "arcanediaries:magic_block_fall"
+    ]
+  }
+}

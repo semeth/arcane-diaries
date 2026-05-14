@@ -5,6 +5,7 @@ import net.semeth.arcanediaries.block.ModBlocks;
 import net.semeth.arcanediaries.component.ModDataComponents;
 import net.semeth.arcanediaries.item.ModCreativeModeTabs;
 import net.semeth.arcanediaries.item.ModItems;
+import net.semeth.arcanediaries.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,6 +43,7 @@ public class ArcaneDiaries {
         ModBlocks.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

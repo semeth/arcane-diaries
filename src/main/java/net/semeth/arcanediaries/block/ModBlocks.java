@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.semeth.arcanediaries.sound.ModSounds;
 
 import java.util.function.Supplier;
 
@@ -30,7 +31,7 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final DeferredBlock<StairBlock> ACTINIUM_STAIRS = registerBlock("actinium_stairs",
             () -> new StairBlock(ModBlocks.ACTINIUM_BLOCK.get().defaultBlockState(),
